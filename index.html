@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moavia SEO Pro — AI-integrated SEO, Google Ads, Meta Ads &amp; WordPress</title>
+<meta name="description" content="Moavia SEO Pro builds AI-integrated SEO, Google Ads, Meta Ads and WordPress growth systems for contractors and home-service businesses across the US and Europe.">
+<meta name="theme-color" content="#07080F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 44'%3E%3Crect width='40' height='44' rx='8' fill='%23070B1A'/%3E%3Crect x='4' y='28' width='6' height='12' rx='1.4' fill='%2314776F'/%3E%3Crect x='12' y='23' width='6' height='17' rx='1.4' fill='%23199F8F'/%3E%3Crect x='20' y='13' width='6' height='27' rx='1.4' fill='%231CBCA6'/%3E%3Crect x='28' y='8' width='6' height='32' rx='1.4' fill='%231FD0B5'/%3E%3Cpath d='M3 33 L15 18 L20 25 L29 13 L37 33' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== ICON SPRITE (inline SVG — no external icon library) ===== -->
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="i-broadcast" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h3l6 4V5L8 9H5a1 1 0 0 0-1 1z"/><path d="M18 8.5a5 5 0 0 1 0 7"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.4L19 10.5l-5.1 2.1L12 18l-1.9-5.4L5 10.5l5.1-2.1L12 3z"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 14l4-4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 14l9 5 9-5"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M4 16l5-5 4 4 7-7"/><path d="M15 8h5v5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-2.9 7.9-7 9-4.1-1.1-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a7.5 7.5 0 0 1-10.8 6.7L4 20l1.4-4.8A7.5 7.5 0 1 1 20 12z"/><path d="M9 11h6M9 14h4"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M4.5 12L20 5l-6.5 14-2.2-5.6L4.5 12z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l1.8 4.3-2.2 1.4a11.5 11.5 0 0 0 5.7 5.7l1.4-2.2L20 15v3a2.5 2.5 0 0 1-2.8 2.5A16.5 16.5 0 0 1 3.5 6.8 2.5 2.5 0 0 1 6 3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5v6M8 7.6v.1M12 16.5v-3.4a2 2 0 0 1 4 0v3.4"/><path d="M12 16.5v-6"/></symbol>
+</svg>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav" id="nav">
+  <div class="shell nav__inner">
+    <a class="brand" href="#hero" aria-label="Moavia SEO Pro — home">
+      <span class="brand__mark brand__mark--photo" aria-hidden="true">
+        <img src="data:image/jpeg;base64,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" alt="">
+      </span>
+      <span class="brand__type">
+        <span class="brand__name">moavia</span>
+        <span class="brand__sub">SEOPRO</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg class="ico ico--sun"><use href="#i-sun"/></svg>
+        <svg class="ico ico--moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn--primary btn--sm" href="#contact">Get Started</a>
+      <button class="icon-btn nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="ico ico--menu"><use href="#i-menu"/></svg>
+        <svg class="ico ico--x"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__aura" aria-hidden="true"></div>
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+
+    <div class="shell hero__inner">
+      <div class="hero__copy">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Islamabad-based, working US &amp; Europe hours</p>
+
+        <h1 class="hero__title">Your next 50 customers are already searching. AI decides who they find.</h1>
+
+        <p class="hero__sub">
+          Moavia SEO Pro builds the four systems that decide it: AI-integrated SEO, Google Ads,
+          AI-powered Meta Ads, and WordPress sites fast enough to convert the traffic they earn.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#services">Explore Services</a>
+          <a class="btn btn--ghost" href="#contact">Book Consultation</a>
+        </div>
+
+        <p class="hero__trust">Built for roofers, HVAC crews, remodelers, plumbers and landscapers running teams of one to ten.</p>
+      </div>
+
+      <div class="hero__stage">
+        <!-- Glass metric badges — laid out in flow so they can never cover the console -->
+        <div class="metrics">
+        <div class="badge glass" data-float="1">
+          <svg class="ico"><use href="#i-trend"/></svg>
+          <span class="badge__num" data-count="300" data-suffix="%">0%</span>
+          <span class="badge__label">average ROI</span>
+        </div>
+
+        <div class="badge glass" data-float="2">
+          <svg class="ico"><use href="#i-spark"/></svg>
+          <span class="badge__num">AI-powered</span>
+          <span class="badge__label">optimization loop</span>
+        </div>
+
+        <div class="badge glass" data-float="3">
+          <svg class="ico"><use href="#i-search"/></svg>
+          <span class="badge__num">Cited</span>
+          <span class="badge__label">in AI answers</span>
+        </div>
+        </div>
+
+        <!-- Live-looking growth console -->
+        <div class="console glass" role="img" aria-label="Illustrative dashboard showing organic clicks up 212 percent, cost per lead down 41 percent, and 18 AI answer citations.">
+          <div class="console__head">
+            <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console__title">Growth snapshot</span>
+            <span class="console__live"><span class="pulse" aria-hidden="true"></span>90 days</span>
+          </div>
+
+          <div class="console__row">
+            <div class="console__meta"><span>Organic clicks</span><b class="up" data-count="212" data-prefix="+" data-suffix="%">+0%</b></div>
+            <div class="bar"><span style="--w:88%"></span></div>
+          </div>
+
+          <div class="console__row">
+            <div class="console__meta"><span>Cost per lead</span><b class="down" data-count="41" data-prefix="−" data-suffix="%">−0%</b></div>
+            <div class="bar bar--alt"><span style="--w:59%"></span></div>
+          </div>
+
+          <div class="console__row">
+            <div class="console__meta"><span>AI answer citations</span><b class="up" data-count="18">0</b></div>
+            <div class="bar bar--cyan"><span style="--w:72%"></span></div>
+          </div>
+
+          <div class="console__foot">
+            <svg class="ico"><use href="#i-shield"/></svg>
+            Reported monthly. No lock-in contracts.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="shell">
+      <header class="section__head reveal">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Services</p>
+        <h2 class="section__title">Four systems. One revenue engine.</h2>
+        <p class="section__deck">Pick the one that is leaking money right now, or run them together and let each feed the next.</p>
+      </header>
+
+      <div class="tabs reveal">
+        <div class="tabs__list" role="tablist" aria-label="Services">
+          <button class="tab is-active" role="tab" id="tab-seo" aria-selected="true" aria-controls="panel-seo">
+            <svg class="ico"><use href="#i-search"/></svg><span>AI-Integrated SEO</span>
+          </button>
+          <button class="tab" role="tab" id="tab-gads" aria-selected="false" aria-controls="panel-gads" tabindex="-1">
+            <svg class="ico"><use href="#i-target"/></svg><span>Google Ads</span>
+          </button>
+          <button class="tab" role="tab" id="tab-meta" aria-selected="false" aria-controls="panel-meta" tabindex="-1">
+            <svg class="ico"><use href="#i-broadcast"/></svg><span>Meta Ads</span>
+          </button>
+          <button class="tab" role="tab" id="tab-wp" aria-selected="false" aria-controls="panel-wp" tabindex="-1">
+            <svg class="ico"><use href="#i-code"/></svg><span>WordPress</span>
+          </button>
+        </div>
+
+        <!-- SEO -->
+        <div class="panel is-active glass" role="tabpanel" id="panel-seo" aria-labelledby="tab-seo" tabindex="0">
+          <div class="panel__intro">
+            <h3>AI-Integrated SEO</h3>
+            <p>Search stopped being ten blue links. Your business now has to be the source an AI answer quotes — and the page a buyer lands on afterwards.</p>
+          </div>
+          <ul class="cards">
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-spark"/></svg>
+              <h4>Answer Engine Optimization</h4>
+              <p>Structured data, entity markup and question-shaped content so AI Overviews and voice assistants read your site as the authority.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-layers"/></svg>
+              <h4>Generative Engine Optimization</h4>
+              <p>Positioning your brand inside the sources ChatGPT, Gemini and Perplexity pull from, then tracking which prompts surface you.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-gauge"/></svg>
+              <h4>Technical SEO</h4>
+              <p>Crawl budget, index bloat, redirect chains, schema and Core Web Vitals — fixed at the template level so it stays fixed.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-trend"/></svg>
+              <h4>Semantic Content Strategy</h4>
+              <p>Topic clusters mapped to how customers actually describe the job, not to keyword volume alone.</p>
+            </li>
+          </ul>
+          <p class="panel__out"><svg class="ico"><use href="#i-check"/></svg> You get: a monthly rank and citation report, a live content calendar, and every technical change logged.</p>
+        </div>
+
+        <!-- Google Ads -->
+        <div class="panel glass" role="tabpanel" id="panel-gads" aria-labelledby="tab-gads" tabindex="0" hidden>
+          <div class="panel__intro">
+            <h3>Google Ads</h3>
+            <p>Paid search buys you the ten minutes when someone's boiler is already broken. The job is to be there without overpaying for it.</p>
+          </div>
+          <ul class="cards">
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-target"/></svg>
+              <h4>Search Ads</h4>
+              <p>Tight intent clusters, negative keyword sculpting and call tracking so you pay for job requests, not curiosity.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-layers"/></svg>
+              <h4>Display Network</h4>
+              <p>Placement-audited display for warm audiences only, with creative sized for the placements that actually convert.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-trend"/></svg>
+              <h4>Shopping Campaigns</h4>
+              <p>Feed cleanup, custom labels and margin-aware bidding for anyone selling products alongside services.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-spark"/></svg>
+              <h4>Performance Max</h4>
+              <p>Asset groups built by service line with signal feeding and exclusions, so PMax scales instead of eating your brand traffic.</p>
+            </li>
+          </ul>
+          <p class="panel__out"><svg class="ico"><use href="#i-check"/></svg> You get: conversion tracking you can trust, a weekly spend review, and full ownership of the ad account.</p>
+        </div>
+
+        <!-- Meta Ads -->
+        <div class="panel glass" role="tabpanel" id="panel-meta" aria-labelledby="tab-meta" tabindex="0" hidden>
+          <div class="panel__intro">
+            <h3>AI-Powered Meta Ads</h3>
+            <p>Facebook and Instagram reach people before they start searching. Creative does the heavy lifting; the AI does the testing.</p>
+          </div>
+          <ul class="cards">
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-broadcast"/></svg>
+              <h4>Lead Generation Campaigns</h4>
+              <p>Instant forms and conversion campaigns with qualifying questions, so your phone rings with jobs in your service radius.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-trend"/></svg>
+              <h4>E-Commerce Scale Campaigns</h4>
+              <p>Catalogue setup, Advantage+ structures and clean CAPI events for stores ready to spend past break-even.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-layers"/></svg>
+              <h4>Retargeting Funnels</h4>
+              <p>Quote-abandoners, video viewers and past customers each get a different message instead of the same reminder.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-spark"/></svg>
+              <h4>Creative Strategy</h4>
+              <p>Hooks and angles generated with AI, then filmed on your crew's phones — jobsite footage beats stock every time.</p>
+            </li>
+          </ul>
+          <p class="panel__out"><svg class="ico"><use href="#i-check"/></svg> You get: a fresh creative batch every two weeks and a dashboard showing cost per booked job.</p>
+        </div>
+
+        <!-- WordPress -->
+        <div class="panel glass" role="tabpanel" id="panel-wp" aria-labelledby="tab-wp" tabindex="0" hidden>
+          <div class="panel__intro">
+            <h3>WordPress Development</h3>
+            <p>Traffic is rent you pay forever if the site does not convert. This is where the other three services cash out.</p>
+          </div>
+          <ul class="cards">
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-code"/></svg>
+              <h4>Custom Theme &amp; Plugin Development</h4>
+              <p>Purpose-built themes and small plugins for quote calculators, service areas and booking flows — no bloated multipurpose kits.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-layers"/></svg>
+              <h4>Elementor Pro Design</h4>
+              <p>Reusable templates and global styles so your team can edit copy without breaking the layout.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-gauge"/></svg>
+              <h4>Speed &amp; Core Web Vitals</h4>
+              <p>Image pipelines, critical CSS, caching and script pruning until LCP sits comfortably under 2.5 seconds on mobile.</p>
+            </li>
+            <li class="card">
+              <svg class="ico card__ico"><use href="#i-shield"/></svg>
+              <h4>Website Maintenance</h4>
+              <p>Staged updates, daily off-site backups, uptime monitoring and malware cleanup on a fixed monthly plan.</p>
+            </li>
+          </ul>
+          <p class="panel__out"><svg class="ico"><use href="#i-check"/></svg> You get: a staging site, a rollback point before every update, and a named person who answers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / PROCESS ===== -->
+  <section class="section section--tint" id="about">
+    <div class="shell about">
+      <div class="about__copy reveal">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>About</p>
+        <h2 class="section__title">One specialist, not a rotating account team.</h2>
+        <p class="section__deck">
+          I'm Moavia Hassan. I run Moavia SEO Pro solo from Islamabad, working US and European
+          hours for small trade and home-service businesses. That means the person who audits your
+          account is the person who builds it, reports on it, and picks up the phone when a campaign
+          moves. Certified in SEO through UC Davis, and shipping client work daily on Fiverr and Upwork.
+        </p>
+        <div class="about__facts">
+          <div class="fact"><b data-count="4" data-suffix="">0</b><span>service lines under one roof</span></div>
+          <div class="fact"><b>US &amp; EU</b><span>time zones covered</span></div>
+          <div class="fact"><b data-count="24" data-suffix="h">0h</b><span>reply time on weekdays</span></div>
+        </div>
+      </div>
+
+      <ol class="steps reveal">
+        <li class="step glass">
+          <span class="step__n">1</span>
+          <h3>Audit</h3>
+          <p>A paid two-week teardown of your site, ad accounts and search visibility. You keep the findings whether or not we work together.</p>
+        </li>
+        <li class="step glass">
+          <span class="step__n">2</span>
+          <h3>Build</h3>
+          <p>Tracking, technical fixes and campaign structure go in first. Nothing launches until the numbers can be measured honestly.</p>
+        </li>
+        <li class="step glass">
+          <span class="step__n">3</span>
+          <h3>Launch</h3>
+          <p>Campaigns and content go live in staged batches so we can tell what moved the needle and what did not.</p>
+        </li>
+        <li class="step glass">
+          <span class="step__n">4</span>
+          <h3>Compound</h3>
+          <p>Monthly reviews feed winners back into creative, keywords and content. The system gets cheaper per lead as it ages.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO / RESULTS ===== -->
+  <!-- TODO before launch: replace these sample engagements with real, verifiable client data. -->
+  <section class="section" id="portfolio">
+    <div class="shell">
+      <header class="section__head reveal">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Portfolio</p>
+        <h2 class="section__title">What the work looks like in numbers.</h2>
+        <p class="section__deck">Three engagements, three different bottlenecks. Same framework underneath.</p>
+      </header>
+
+      <div class="work reveal">
+        <article class="work__card glass">
+          <div class="work__tag">Roofing contractor · Texas</div>
+          <h3>Ranked for storm damage before the storm season</h3>
+          <p>Thin service-area pages and no schema. Rebuilt the location structure, added AEO markup, and let Google Ads cover the gap while organic caught up.</p>
+          <dl class="work__stats">
+            <div><dt>Organic leads</dt><dd class="up">+212%</dd></div>
+            <div><dt>Cost per lead</dt><dd class="down">−41%</dd></div>
+            <div><dt>Timeline</dt><dd>9 months</dd></div>
+          </dl>
+        </article>
+
+        <article class="work__card glass">
+          <div class="work__tag">HVAC services · Manchester, UK</div>
+          <h3>Cut wasted spend, doubled booked callouts</h3>
+          <p>Broad-match campaigns burning budget on job-seekers and DIY queries. Rebuilt with intent clusters, call tracking and a Performance Max layer per service line.</p>
+          <dl class="work__stats">
+            <div><dt>ROAS</dt><dd class="up">4.8×</dd></div>
+            <div><dt>Booked jobs</dt><dd class="up">+63%</dd></div>
+            <div><dt>Timeline</dt><dd>4 months</dd></div>
+          </dl>
+        </article>
+
+        <article class="work__card glass">
+          <div class="work__tag">Kitchen remodeler · Dublin</div>
+          <h3>A site fast enough to deserve the traffic</h3>
+          <p>Beautiful portfolio, 4.8-second load on mobile. Custom Elementor build, image pipeline and script pruning — then Meta retargeting to quote-abandoners.</p>
+          <dl class="work__stats">
+            <div><dt>Mobile LCP</dt><dd class="up">4.8s → 1.1s</dd></div>
+            <div><dt>Quote requests</dt><dd class="up">+37%</dd></div>
+            <div><dt>Timeline</dt><dd>6 weeks</dd></div>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section section--tint" id="pricing">
+    <div class="shell">
+      <header class="section__head reveal">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Pricing</p>
+        <h2 class="section__title">Flat monthly retainers. No percentage of spend.</h2>
+        <p class="section__deck">Month to month after the first 90 days. Ad budget is paid directly to the platforms and stays yours.</p>
+      </header>
+
+      <div class="tiers reveal">
+        <article class="tier glass">
+          <h3 class="tier__name">Launch</h3>
+          <p class="tier__for">One location that needs to get found.</p>
+          <p class="tier__price"><span class="tier__cur">$</span>497<span class="tier__per">/month</span></p>
+          <ul class="tier__list">
+            <li><svg class="ico"><use href="#i-check"/></svg>AI-integrated SEO for one service area</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Technical audit and fixes</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Google Business Profile optimization</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>2 content pieces per month</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Monthly report and call</li>
+          </ul>
+          <a class="btn btn--ghost btn--full" href="#contact" data-plan="Launch">Start with Launch</a>
+        </article>
+
+        <article class="tier tier--featured glass">
+          <span class="tier__flag">Most chosen</span>
+          <h3 class="tier__name">Growth</h3>
+          <p class="tier__for">Ready to pair organic with paid.</p>
+          <p class="tier__price"><span class="tier__cur">$</span>997<span class="tier__per">/month</span></p>
+          <ul class="tier__list">
+            <li><svg class="ico"><use href="#i-check"/></svg>Everything in Launch, multi-location</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Google Ads or Meta Ads management</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Answer &amp; Generative Engine Optimization</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Landing pages built and tested</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Fortnightly creative batch</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>WordPress maintenance included</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#contact" data-plan="Growth">Start with Growth</a>
+        </article>
+
+        <article class="tier glass">
+          <h3 class="tier__name">Scale</h3>
+          <p class="tier__for">Multiple crews, multiple markets.</p>
+          <p class="tier__price"><span class="tier__cur">$</span>1,997<span class="tier__per">/month</span></p>
+          <ul class="tier__list">
+            <li><svg class="ico"><use href="#i-check"/></svg>Everything in Growth</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Google Ads <em>and</em> Meta Ads together</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Custom theme or plugin development</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Conversion rate testing programme</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Weekly reporting and Slack access</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Priority turnaround on requests</li>
+          </ul>
+          <a class="btn btn--ghost btn--full" href="#contact" data-plan="Scale">Start with Scale</a>
+        </article>
+      </div>
+
+      <p class="tiers__note reveal">Need a one-off WordPress build instead? Fixed-price projects start at $850. Ask for a quote.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="shell contact">
+      <div class="contact__copy reveal">
+        <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Contact</p>
+        <h2 class="section__title">Tell me what's stuck.</h2>
+        <p class="section__deck">Send the details and you'll get a reply within one business day — usually with two or three things you can fix immediately, free.</p>
+
+        <ul class="contact__list">
+          <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:moavia400@gmail.com">moavia400@gmail.com</a></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><a href="tel:+923234313869">+92 323 4313869</a></li>
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>Islamabad, Pakistan — working US &amp; EU hours</span></li>
+        </ul>
+      </div>
+
+      <form class="form glass reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input type="text" id="f-name" name="name" autocomplete="name" placeholder="Jordan Reyes" required>
+          <p class="field__err" data-err-for="f-name"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" autocomplete="email" placeholder="you@company.com" required>
+          <p class="field__err" data-err-for="f-email"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-site">Website <span class="field__opt">(optional)</span></label>
+          <input type="text" id="f-site" name="website" placeholder="yourcompany.com">
+          <p class="field__err" data-err-for="f-site"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-service">What do you need?</label>
+          <select id="f-service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>AI-Integrated SEO</option>
+            <option>Google Ads</option>
+            <option>AI-Powered Meta Ads</option>
+            <option>WordPress Development</option>
+            <option>Not sure yet — help me choose</option>
+          </select>
+          <p class="field__err" data-err-for="f-service"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-budget">Monthly budget</label>
+          <select id="f-budget" name="budget" required>
+            <option value="">Choose a range</option>
+            <option>Under $500</option>
+            <option>$500 – $1,000</option>
+            <option>$1,000 – $2,500</option>
+            <option>$2,500+</option>
+            <option>One-off project</option>
+          </select>
+          <p class="field__err" data-err-for="f-budget"></p>
+        </div>
+
+        <div class="field field--full">
+          <label for="f-msg">What's the situation?</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Two roofing crews in Austin. Leads dried up after the last Google update." required></textarea>
+          <p class="field__err" data-err-for="f-msg"></p>
+        </div>
+
+        <div class="form__foot">
+          <button class="btn btn--primary btn--full" type="submit" id="formSubmit">Send enquiry</button>
+          <p class="form__note">No newsletter, no sales sequence. One reply from one person.</p>
+        </div>
+
+        <div class="form__done" id="formDone" hidden>
+          <span class="form__tick" aria-hidden="true"><svg class="ico"><use href="#i-check"/></svg></span>
+          <h3>Enquiry sent</h3>
+          <p id="formDoneMsg">Thanks — I've got it. Expect a reply at your email within one business day.</p>
+          <button class="btn btn--ghost btn--sm" type="button" id="formReset">Send another</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="shell foot__inner">
+    <div class="foot__brand">
+      <a class="brand" href="#hero">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 44" focusable="false">
+            <rect x="1"    y="26.7" width="6.5" height="17.3" rx="1.6" fill="#14776F"/>
+            <rect x="9.6"  y="20.2" width="6.5" height="23.8" rx="1.6" fill="#199F8F"/>
+            <rect x="18.2" y="6.2"  width="6.5" height="37.8" rx="1.6" fill="#1CBCA6"/>
+            <rect x="26.8" y="0.5"  width="6.5" height="43.5" rx="1.6" fill="#1FD0B5"/>
+            <path d="M0 35.4 L15.1 12.7 L20.5 23.5 L30.2 6.2 L40 35.4" fill="none"
+                  stroke="var(--logo-line)" stroke-width="2.4"
+                  stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__type">
+          <span class="brand__name">moavia</span>
+          <span class="brand__sub">SEOPRO</span>
+        </span>
+      </a>
+      <p>AI-integrated SEO, Google Ads, AI-powered Meta Ads and WordPress development for small trade and home-service businesses in the US and Europe.</p>
+      <ul class="foot__social">
+        <li><a href="https://www.fiverr.com/moavia_seopro" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-link"/></svg>Fiverr · moavia_seopro</a></li>
+        <li><a href="https://www.upwork.com/freelancers/~moavia_seopro" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-link"/></svg>Upwork · moavia_seopro</a></li>
+        <li><a href="https://www.linkedin.com/in/moavia-hassan-seo" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <nav class="foot__col" aria-label="Site">
+      <h2>Site</h2>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="foot__col" aria-label="Services">
+      <h2>Services</h2>
+      <ul>
+        <li><a href="#services">AI-Integrated SEO</a></li>
+        <li><a href="#services">Google Ads</a></li>
+        <li><a href="#services">AI-Powered Meta Ads</a></li>
+        <li><a href="#services">WordPress Development</a></li>
+      </ul>
+    </nav>
+
+    <div class="foot__col">
+      <h2>Reach me</h2>
+      <ul>
+        <li><a href="mailto:moavia400@gmail.com">moavia400@gmail.com</a></li>
+        <li><a href="tel:+923234313869">+92 323 4313869</a></li>
+        <li>Islamabad, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="shell foot__bar">
+    <p>© <span id="year">2026</span> Moavia SEO Pro. All rights reserved.</p>
+    <p>Built and maintained by Moavia Hassan.</p>
+  </div>
+</footer>
+
+<!-- ===== AI ASSISTANT WIDGET ===== -->
+<div class="chat" id="chat">
+  <button class="chat__launch" id="chatLaunch" type="button" aria-label="Open Moavia AI assistant" aria-expanded="false" aria-controls="chatPanel">
+    <svg class="ico"><use href="#i-chat"/></svg>
+    <span class="chat__dot" aria-hidden="true"></span>
+  </button>
+
+  <section class="chat__panel glass" id="chatPanel" aria-label="Moavia AI assistant" hidden>
+    <header class="chat__head">
+      <span class="chat__avatar" aria-hidden="true"><svg class="ico"><use href="#i-spark"/></svg></span>
+      <div class="chat__who">
+        <strong>Moavia AI</strong>
+        <span><i class="pulse" aria-hidden="true"></i>Usually replies instantly</span>
+      </div>
+      <button class="icon-btn chat__close" id="chatClose" type="button" aria-label="Close assistant">
+        <svg class="ico"><use href="#i-close"/></svg>
+      </button>
+    </header>
+
+    <div class="chat__log" id="chatLog" role="log" aria-live="polite" aria-atomic="false"></div>
+
+    <div class="chat__chips" id="chatChips"></div>
+
+    <form class="chat__form" id="chatForm">
+      <label class="sr-only" for="chatInput">Message Moavia AI</label>
+      <input id="chatInput" type="text" placeholder="Ask about services, pricing, timelines…" autocomplete="off">
+      <button class="chat__send" type="submit" aria-label="Send message">
+        <svg class="ico"><use href="#i-send"/></svg>
+      </button>
+    </form>
+    <p class="chat__disclaimer">Automated assistant. For anything specific, <a href="#contact" data-chat-close>send an enquiry</a>.</p>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
